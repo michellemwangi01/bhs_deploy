@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --primary: #0b2250;
+  --gold: #b6922e;
+  --primary-font: "Georgia", "Times New Roman", Times, serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .primary-color {
+    color: var(--primary);
+  }
+  .h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: robo;
+    text-align: center;
+  }
+  .h1-2 {
+    font-size: 4rem;
+    color: #0b2250;
+    font-family: robo;
+    text-align: center;
+  }
+  .h1-smscreen {
+    font-size: 3rem;
+    color: white;
+    font-family: robo;
+    text-align: center;
+  }
+  .h1-2--smscreen {
+    font-size: 3rem;
+    color: #0b2250;
+    font-family: robo;
+    text-align: center;
+  }
+  .h2 {
+    font-size: 2rem;
+    color: white;
+    font-family: robo;
+    text-align: center;
+  }
+  .button {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+  }
+  .button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .button-contact {
+    background-color: green;
+    color: white;
+    width: auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+  }
+  .button-contact:hover {
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+  }
+  .button-quest {
+    background-color: var(--gold);
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+  }
+  .button-quest:hover {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    background-color: #ffffff;
+  }
+  .par {
+    font-family: var(--primary-font);
+  }
+  .approachTitles {
+    color: var(--secondary);
+    font-family: var(--primary-font);
+  }
+  .approachDetails {
+    font-family: var(--primary-font);
+  }
+  .text {
+    font-family: var(--primary-font);
+  }
+}
+
+.community-page {
+  background-color: black; /* Fallback background color */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-76827.jpg?w=1380&t=st=1715516234~exp=1715516834~hmac=e5f4bd93347744342c6c2ced0be1d23792db9403fe8962eebacee7e9a2b6c793");
+  background-size: cover; /* Cover the entire element with the background image */
+  background-position: center; /* Center the background image */
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #0b2250; /* Underline color */
+  transition: width 0.3s ease-in-out; /* Transition effect */
+}
+
+a:hover::after {
+  width: calc(100%); /* Expand the underline to full width */
+}
+li a {
+  color: #0b2250;
+}
+.active {
+  background-color: var(--gold); /* Background color for active item */
+  color: #ffffff; /* Text color for active item */
+  padding: 5px;
+}
+.img-shake {
+  /* Define the initial styles for the image */
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* Apply a smooth transition effect */
+}
+
+/* Define keyframes for the shake animation */
+@keyframes shake {
+  0% {
+    transform: translate(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-5px, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translate(5px, 0);
+  }
+}
+
+/* Apply the animation only when hovering over the image */
+.shake-on-hover:hover {
+  animation: shake 0.5 ease-in-out; /* Use the defined 'shake' animation */
+}
+
+.angled-border-container {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Adjust the height as needed */
+  background-color: #f0f0f0; /* Background color of the container */
+  overflow: visible; /* Ensure the pseudo-element doesn't overflow the container */
+}
+
+.angled-border-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%; /* Make it wider to cover the bottom fully at an angle */
+  height: 20px; /* Height of the border */
+  background-color: #333; /* Color of the border */
+  transform: rotate(-40deg); /* Rotate to create the angle */
+  transform-origin: left bottom;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.icon {
+  margin-right: 10px;
+  color: var(--primary); /* Example color, change to whatever you prefer */
+}
+
+.text {
+  display: inline-block;
+}
