@@ -41,31 +41,31 @@ body {
   .h1 {
     font-size: 4rem;
     color: white;
-    font-family: robo;
+    font-family: var(--primary-font);
     text-align: center;
   }
   .h1-2 {
     font-size: 4rem;
     color: #0b2250;
-    font-family: robo;
+    font-family: var(--primary-font);
     text-align: center;
   }
   .h1-smscreen {
     font-size: 3rem;
     color: white;
-    font-family: robo;
+    font-family: var(--primary-font);
     text-align: center;
   }
   .h1-2--smscreen {
     font-size: 3rem;
     color: #0b2250;
-    font-family: robo;
+    font-family: var(--primary-font);
     text-align: center;
   }
   .h2 {
     font-size: 2rem;
     color: white;
-    font-family: robo;
+    font-family: var(--primary-font);
     text-align: center;
   }
   .button {
