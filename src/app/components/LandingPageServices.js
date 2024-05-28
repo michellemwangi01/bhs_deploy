@@ -14,11 +14,9 @@ const LandingPageServices = () => {
             data-aos="fade-up"
           >
             <h1
-              className=" text-white  w-full text-xl lg:text-blue-950"
+              className=" text-white par w-full text-xl lg:text-blue-950"
               style={{
                 fontSize: "3rem",
-                // color: "#0b2250",
-                fontFamily: "robo",
                 textAlign: "center",
                 lineHeight: "5rem",
                 margin: "2rem",
