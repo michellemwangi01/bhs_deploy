@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import Link from "next/link";
 
@@ -21,7 +22,7 @@ const ContactUs = () => {
             className="button-contact m-2 flex items-center"
           >
             <span className="mr-2">
-              <IoLogoWhatsapp />
+              <FaWhatsapp />
             </span>
             Whatsapp
           </Link>

@@ -16,6 +16,10 @@
 8. Make the menu button on small screens to include the navbar items.
 9. Hide the phone number on small screens ---DONE
 
+## APP Router
+
+https://stackoverflow.com/questions/76318569/creating-a-next-js-app-in-vs-code-does-not-have-pages-or-styles-folder
+
 ## Getting Started
 
 First, run the development server:

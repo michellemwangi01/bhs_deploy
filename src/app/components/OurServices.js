@@ -6,16 +6,16 @@ const OurServices = () => {
   return (
     <div className="flex flex-col m-auto my-10">
       <h1 className="h1-2"> Learning Services </h1>
-      <div class="flex flex-wrap lg:flex-nowrap container justify-center align-middle m-auto">
-        <div class="card" data-aos="flip-right">
-          <div class="face face1">
-            <div class="content">
+      <div className="flex flex-wrap xl:flex-nowrap container justify-center align-middle m-auto">
+        <div className="card mx-2" data-aos="flip-right">
+          <div className="face face1">
+            <div className="content">
               <img src="images/thinking.png" />
               <h3 className=" text-2xl par">Exam Prep</h3>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
+          <div className="face face2">
+            <div className="content">
               <p className="par text-xl">
                 Exams are cool when youʼre ready to ace them! Our exam prep
                 turns nervous into confident. Bring on the tests – weʼve got the
@@ -27,15 +27,15 @@ const OurServices = () => {
             </div>
           </div>
         </div>
-        <div class="card" data-aos="flip-right">
-          <div class="face face1">
-            <div class="content">
+        <div className="card mx-2" data-aos="flip-right">
+          <div className="face face1">
+            <div className="content">
               <img src="images/online-learning.png" />
               <h3 className="par">Online Classes</h3>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
+          <div className="face face2">
+            <div className="content">
               <p className="par text-xl">
                 Dive into our interactive online classes! Each lesson is packed
                 with fun and designed to make learning stick. Itʼs like a brain
@@ -47,15 +47,15 @@ const OurServices = () => {
             </div>
           </div>
         </div>
-        <div class="card" data-aos="flip-right">
-          <div class="face face1">
-            <div class="content">
+        <div className="card mx-2" data-aos="flip-right">
+          <div className="face face1">
+            <div className="content">
               <img src="images/home.png" />
               <h3 className="par">Home Tutors</h3>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
+          <div className="face face2">
+            <div className="content">
               <p className="par text-xl">
                 Our home tutors come to you, bringing a world of knowledge to
                 your doorstep. Itʼs like having a learning superhero in your
@@ -67,15 +67,15 @@ const OurServices = () => {
             </div>
           </div>
         </div>
-        <div class="card" data-aos="flip-right">
-          <div class="face face1">
-            <div class="content">
+        <div className="card mx-2" data-aos="flip-right">
+          <div className="face face1">
+            <div className="content">
               <img src="images/child.png" />
               <h3 className="par">Homework Help</h3>
             </div>
           </div>
-          <div class="face face2">
-            <div class="content">
+          <div className="face face2">
+            <div className="content">
               <p className="par text-xl">
                 Stuck on homework? Donʼt sweat it! Our homework helpers turn
                 those huh? moments into aha! moments. Get ready to high-five

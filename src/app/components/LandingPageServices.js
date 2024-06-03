@@ -24,8 +24,8 @@ const LandingPageServices = () => {
           </div>
           <div data-aos="fade-up" className="">
             <img
-              src="https://bumahomeschool.com/wp-content/uploads/2024/01/buma.png"
-              className=" shake-on-hover img-shake shadow-2xl "
+              src="./images/buma-logo.png"
+              className=" shake-on-hover img-shake shadow-2xl rounded-full"
             />
           </div>
         </div>

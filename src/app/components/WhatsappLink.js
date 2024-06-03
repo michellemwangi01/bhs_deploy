@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsappLink = () => {
   const urlencodedmessage =
@@ -8,7 +8,7 @@ const WhatsappLink = () => {
   const phoneNumber = "254722943768";
   return (
     <div
-      className="fixed bottom-4 right-4 m-2  bg-green-900 text-white rounded-full shadow-lg"
+      className="fixed bottom-4 right-4 m-2  bg-green-600 text-white rounded-full shadow-lg"
       style={{ boxShadow: "0 4px 6px rgba(34, 197, 94, 0.5)" }}
     >
       <Link
@@ -17,7 +17,7 @@ const WhatsappLink = () => {
         rel="noopener noreferrer"
         className="text-4xl m-2 flex items-center"
       >
-        <IoLogoWhatsapp />
+        <FaWhatsapp />
       </Link>
     </div>
   );
