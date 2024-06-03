@@ -3,7 +3,8 @@ import React from "react";
 const ourApproach = [
   {
     title: "Personalized Learning Paths for Every Learner",
-    imageUrl: "https://bumahomeschool.com/wp-content/uploads/2024/01/class.jpg",
+    imageUrl:
+      "https://images.pexels.com/photos/7104384/pexels-photo-7104384.jpeg?auto=compress&cs=tinysrgb&w=600",
     description:
       "We specialize in crafting personalized learning paths tailored to the unique needs and preferences of each learner. By focusing on personalized education, we empower every student to develop their skills and cultivate a genuine passion for learning. ",
   },
@@ -24,7 +25,7 @@ const ourApproach = [
   {
     title: "Interactive and Engaging Curriculum",
     imageUrl:
-      "https://images.pexels.com/photos/7104384/pexels-photo-7104384.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Our curriculum is designed to be interactive and engaging, incorporating multimedia resources, hands-on activities, and collaborative projects. We believe in making learning fun and meaningful for every student.",
   },
