@@ -1,36 +1,31 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
+import Link from "next/link";
 
 const HomeSchoolingPage = () => {
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
+    <div className="p-6  min-h-screen">
       {/* Hero Section */}
-      <div className="flex flex-row justify-center m-auto items-center h-full">
-        <div className=" m-auto">
+      <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center m-auto items-center h-full w-3/4">
+        <div className="flex justify-center m-auto w-1/2 ">
           <img src="https://cdn.24.co.za/files/Cms/General/d/2670/1e36c9160085494bbd0a9d640f0bfb86.jpg" />
         </div>
-        <div className="flex flex-col p-2 justify-center items-center h-full">
-          <h1 className="h1-2 text-center">Enhancing Homeschooling</h1>
-          <h2 className="par text-xl text-center">
-            Experience the best in homeschooling with our dedicated support and
-            comprehensive curriculum options.
-          </h2>
+        <div className="text-center m-auto h-full">
+          <h1 className="h1-2 text-center">
+            Enhancing <span className="span">Homeschooling</span>{" "}
+          </h1>
         </div>
       </div>
 
       <main className="mt-10">
-        {/* Introduction Section */}
-        <section className="bg-white shadow-lg rounded-lg p-8 mb-12 mx-6 md:mx-12 lg:mx-24 text-center">
-          <p className="text-lg text-gray-700">
+        {/* About Us Section */}
+        <section className="par text-2xl  lg:text-2xl p-8 mb-12  text-center">
+          <h3 className="h3 text-4xl mb-6">Our Homeschooling Services</h3>
+          <p className=" text-gray-700">
             We prioritize all our home-based students, enabling them to learn
             Creative Writing, Reading, Mathematics, Grammar, Sciences, ICT,
             Business Studies, and more.
           </p>
-        </section>
-
-        {/* About Us Section */}
-        <section className="bg-blue-50 shadow-lg rounded-lg p-8 mb-12 mx-6 md:mx-12 lg:mx-24 text-center">
-          <h3 className="text-3xl font-semibold mb-6">About Us</h3>
           <p className="text-gray-700">
             We are a professional homeschooling and tuition center based in
             Nairobi, offering high-quality services for students following the
@@ -45,28 +40,26 @@ const HomeSchoolingPage = () => {
             Our tutors are fully qualified with up-to-date teaching
             methodologies tailored to your child’s homeschooling curriculum.
           </p>
-        </section>
-
-        {/* Services Section */}
-        <section className="bg-white shadow-lg rounded-lg p-8 mb-12 mx-6 md:mx-12 lg:mx-24 text-center">
-          <h3 className="text-3xl font-semibold mb-6">Our Services</h3>
-          <p className="text-gray-700">
+          <p className="text-gray-700 mt-4">
             We currently offer homeschooling services for children of all ages
             at our center.
           </p>
           <div className="flex justify-center mt-6">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition duration-300">
+            <Link
+              href="/admissions"
+              className="btn-apply par text-xl  text-white hover:border border-1 border-yellow-800 hover:bg-white hover:text-yellow-800 py-3 px-6 rounded-lg transition duration-300"
+            >
               Apply Here to Book a Free Assessment
-            </button>
+            </Link>
           </div>
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-gradient-to-r from-blue-100 to-gold shadow-lg rounded-lg p-8 mb-12 mx-6 md:mx-12 lg:mx-24">
-          <h3 className="text-3xl font-semibold mb-6 text-center">
+        <section className="md:py-10 py-4">
+          <h3 className="par h3 text-4xl mb-6 text-center">
             Benefits of Homeschooling
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-row flex-wrap justify-center align-middle">
             {[
               "Assess your child’s individual needs",
               "Take control of your child’s education",
@@ -81,7 +74,7 @@ const HomeSchoolingPage = () => {
             ].map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md text-gray-700 flex items-center"
+                className="par text-lg bg-gradient-to-r from-blue-100 to-gold shadow-lg rounded-lg p-6  text-gray-700 flex items-center m-4"
               >
                 <FiCheckCircle className="text-primary mr-3" />
                 <span>{benefit}</span>
@@ -91,24 +84,22 @@ const HomeSchoolingPage = () => {
         </section>
 
         {/* Client Areas Section */}
-        <section className="bg-gradient-to-r from-gold to-blue-100 shadow-lg rounded-lg p-8 mb-12 mx-6 md:mx-12 lg:mx-24 text-center">
-          <h3 className="text-3xl font-semibold mb-6">Our Client Areas</h3>
-          <p className="text-gray-700">
+        {/* <section className="par bg-gradient-to-r from-gold to-blue-100  p-8 mb-12  text-center">
+          <h3 className="h3 text-4xl  mb-6">Our Client Areas</h3>
+          <p className="text-gray-700 text-3xl">
             Kilimani, Kileleshwa, Lavington, Karen, Westlands, Runda, Muthaiga
           </p>
           <div className="flex justify-center mt-6">
-            <button className="bg-gold hover:bg-yellow-400 text-white py-3 px-6 rounded-lg transition duration-300">
+            <button className="bg-blue-900 hover:bg-blue-600 text-white py-3 px-6 rounded-lg transition duration-300">
               Enroll Your Child Today
             </button>
           </div>
-        </section>
+        </section> */}
 
         {/* Services Offered Section */}
-        <section className="bg-white shadow-lg rounded-lg p-8 mb-12 mx-6 md:mx-12 lg:mx-24 text-center">
-          <h3 className="text-3xl font-semibold mb-6">
-            Our Homeschooling Services Include
-          </h3>
-          <ul className="list-disc list-inside text-gray-700 text-center">
+        <section className="par bg-white p-8 mb-12 text-center">
+          <h3 className="h3 text-4xl mb-6">Homeschooling Services</h3>
+          <div className="custom-scroll flex justify-evenly overflow-x-auto">
             {[
               "IB Homeschooling",
               "IGCSE Homeschooling",
@@ -117,10 +108,26 @@ const HomeSchoolingPage = () => {
               "GED Homeschooling",
               "SAT Homeschooling",
             ].map((service, index) => (
-              <li key={index}>{service}</li>
+              <div
+                key={index}
+                className="circle-item flex-shrink-0 w-40 h-40 m-8 p-4 bg-[#b6922e] rounded-full flex items-center justify-center text-white text-xl shadow-lg transform transition-all duration-300"
+              >
+                {service}
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
+
+        {/* ENROLL TODAY*/}
+        {/* <section className="par bg-white py-12 mb-12 text-center">
+          <Link
+            href="/admissions"
+            className="btn-apply par text-xl  text-white hover:border border-1 border-yellow-800 hover:bg-white hover:text-yellow-800 py-3 px-6 rounded-lg transition duration-300"
+          >
+            {" "}
+            Enroll Today
+          </Link>
+        </section> */}
       </main>
     </div>
   );

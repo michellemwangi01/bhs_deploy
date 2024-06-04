@@ -68,6 +68,9 @@ body {
     font-family: var(--primary-font);
     text-align: center;
   }
+  .h3 {
+    color: var(--primary);
+  }
   .button {
     background-color: var(--primary);
     color: white;
@@ -79,6 +82,12 @@ body {
     background-color: transparent;
     color: white;
     border: 1px solid white;
+  }
+  .btn-apply {
+    background-color: var(--gold);
+  }
+  .span {
+    color: var(--gold);
   }
 
   .button-contact {
@@ -153,7 +162,7 @@ li a {
   color: #0b2250;
 }
 .active {
-  background-color: var(--gold); /* Background color for active item */
+  /* background-color: var(--gold); Background color for active item */
   color: #ffffff; /* Text color for active item */
   padding: 5px;
 }
@@ -228,4 +237,47 @@ li a {
 
 .text {
   display: inline-block;
+}
+
+/* Custom styles for hover effects */
+.circle-item:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: #b6922e;
+  border: 1px solid #b6922e;
+}
+
+/* ----------------------------- */
+/* Custom Scrollbar */
+.custom-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b6922e #f1f1f1;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 12px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #b6922e;
+  border-radius: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a08024;
+}
+
+/* Hide scrollbar if not needed */
+.custom-scroll {
+  overflow: hidden;
+}
+
+.custom-scroll:hover {
+  overflow-x: auto;
 }

@@ -132,6 +132,15 @@ function Navbar() {
                 Admission
               </Link>
             </li>
+            <li className={activeItem === "homeschool" ? "active" : ""}>
+              <Link
+                href="/homeschool"
+                className="block py-2 px-3 md:p-0 text-xl rounded"
+                onClick={() => handleItemClick("homeschool")}
+              >
+                Homeschooling
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
