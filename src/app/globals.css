@@ -93,7 +93,7 @@ body {
   .button-contact {
     background-color: green;
     color: white;
-    width: auto;
+    width: 10rem;
     padding: 1rem;
     font-size: 1.2rem;
     font-family: var(--primary-font);
@@ -102,6 +102,23 @@ body {
     background-color: transparent;
     color: green;
     border: 1px solid green;
+  }
+  .button-contact-phone {
+    background-color: #0157c4;
+    color: white;
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .button-contact-phone:hover {
+    background-color: transparent;
+    color: #0157c4;
+    border: 1px solid #0157c4;
   }
   .button-quest {
     background-color: var(--gold);

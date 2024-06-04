@@ -16,7 +16,7 @@ const ContactUs = () => {
         </h1>
         <div className="flex justify-center">
           <Link
-            href="https://wa.me/254700562291?text:Hello%2C%20Thank%20you%20for%20visiting%20our%20platform%20and%20welcome%20to%20Buma%20Home%20School%20and%20Tuition%20Center.%20How%20can%20we%20be%20of%20service%20today%3F"
+            href="https://wa.me/254722943768?text:Hello%2C%20Thank%20you%20for%20visiting%20our%20platform%20and%20welcome%20to%20Buma%20Home%20School%20and%20Tuition%20Center.%20How%20can%20we%20be%20of%20service%20today%3F"
             target="_blank"
             rel="noopener noreferrer"
             className="button-contact m-2 flex items-center"
@@ -28,12 +28,12 @@ const ContactUs = () => {
           </Link>
           <Link
             href="tel:254722943768"
-            className="button-contact m-2 flex items-center"
+            className="button-contact-phone m-2 flex text-center items-center"
           >
             <span className="mr-2">
               <BiSolidPhoneCall />
             </span>
-            Call
+            Call Us
           </Link>
         </div>
       </div>
