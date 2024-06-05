@@ -27,7 +27,7 @@ const ContactUs = () => {
             Whatsapp
           </Link>
           <Link
-            href="tel:254722943768"
+            href="tel:+254722943768"
             className="button-contact-phone m-2 flex text-center items-center"
           >
             <span className="mr-2">
