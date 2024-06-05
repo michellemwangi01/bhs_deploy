@@ -114,13 +114,14 @@ function Navbar() {
                 Services
               </Link>
             </li>
-            <li className={activeItem === "contacts" ? "active" : ""}>
+
+            <li className={activeItem === "homeschool" ? "active" : ""}>
               <Link
-                href="/contacts"
+                href="/homeschool"
                 className="block py-2 px-3 md:p-0 text-xl rounded"
-                onClick={() => handleItemClick("contacts")}
+                onClick={() => handleItemClick("homeschool")}
               >
-                Contacts
+                Homeschooling
               </Link>
             </li>
             <li className={activeItem === "admission" ? "active" : ""}>
@@ -132,13 +133,22 @@ function Navbar() {
                 Admission
               </Link>
             </li>
-            <li className={activeItem === "homeschool" ? "active" : ""}>
+            <li className={activeItem === "careers" ? "active" : ""}>
               <Link
-                href="/homeschool"
+                href="/careers"
                 className="block py-2 px-3 md:p-0 text-xl rounded"
-                onClick={() => handleItemClick("homeschool")}
+                onClick={() => handleItemClick("careers")}
               >
-                Homeschooling
+                Careers
+              </Link>
+            </li>
+            <li className={activeItem === "contacts" ? "active" : ""}>
+              <Link
+                href="/contacts"
+                className="block py-2 px-3 md:p-0 text-xl rounded"
+                onClick={() => handleItemClick("contacts")}
+              >
+                Contacts
               </Link>
             </li>
           </ul>
