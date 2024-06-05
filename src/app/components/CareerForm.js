@@ -92,11 +92,11 @@ const CareerForm = () => {
           our leading tuition centre. As a hard-working and enthusiastic
           teaching professional with excellent subject knowledge, you will have
           the opportunity to inspire and educate students in a dynamic learning
-          environment. <br /> Our centre prides itself on fostering academic
-          excellence and personal growth. If you possess a sound understanding
-          of these subjects and are committed to making a positive impact on
-          students' educational journeys, we invite you to apply and become a
-          part of our dedicated team.
+          environment. <br /> <br /> Our centre prides itself on fostering
+          academic excellence and personal growth. If you possess a sound
+          understanding of these subjects and are committed to making a positive
+          impact on students&apos; educational journeys, we invite you to apply
+          and become a part of our dedicated team. <br />
         </h3>
       </div>
 
