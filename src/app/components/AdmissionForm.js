@@ -14,7 +14,7 @@ const AdmissionForm = () => {
   } = useForm();
   const form = useRef();
 
-  const vendorRegistrationSuccessful = (message, type) => {
+  const studentApplicationSuccessful = (message, type) => {
     toast(message, { autoClose: 3000, type });
   };
 
@@ -65,18 +65,18 @@ const AdmissionForm = () => {
       message: customMessage,
     };
 
+    // emailjs account details
+    const bumaServiceID = "service_93ibmek";
+    const bumaContactUsTemplateID = "template_soyky8m";
+    const bumaUserID = "rThJZpQfq4Oz1Yx43";
+
     emailjs
-      .send(
-        "service_qqiovkg",
-        "template_anbk7dx",
-        emailParams,
-        "Et-gQwpscuzgDG164"
-      )
+      .send(bumaServiceID, bumaContactUsTemplateID, emailParams, bumaUserID)
       .then(
         () => {
           console.log("SUCCESS!");
-          vendorRegistrationSuccessful(
-            "Your details has been successfully sent! Please await our response.",
+          studentApplicationSuccessful(
+            "Your application has been successfully sent! Please await our response.",
             "success"
           );
         },

@@ -14,7 +14,7 @@ const CareerForm = () => {
   } = useForm();
   const form = useRef();
 
-  const applicationSuccessful = (message, type) => {
+  const tutorApplicationSuccessful = (message, type) => {
     toast(message, { autoClose: 3000, type });
   };
 
@@ -46,21 +46,21 @@ const CareerForm = () => {
     const emailParams = {
       from_name: `${first_name} ${last_name}`,
       from_email: email,
-      to_email: "info@tuitioncentre.com",
+      to_email: "info@bumahomeschool.com",
       message: customMessage,
     };
 
+    // emailjs account details
+    const bumaServiceID = "service_93ibmek";
+    const bumaContactUsTemplateID = "template_soyky8m";
+    const bumaUserID = "rThJZpQfq4Oz1Yx43";
+
     emailjs
-      .send(
-        "service_qqiovkg",
-        "template_anbk7dx",
-        emailParams,
-        "Et-gQwpscuzgDG164"
-      )
+      .send(bumaServiceID, bumaContactUsTemplateID, emailParams, bumaUserID)
       .then(
         () => {
           console.log("SUCCESS!");
-          applicationSuccessful(
+          tutorApplicationSuccessful(
             "Your application has been successfully sent! Please await our response.",
             "success"
           );

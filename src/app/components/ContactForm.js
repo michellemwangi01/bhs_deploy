@@ -60,13 +60,13 @@ const ContactForm = () => {
       message: customMessage,
     };
 
+    // emailjs account details
+    const bumaServiceID = "service_93ibmek";
+    const bumaContactUsTemplateID = "template_soyky8m";
+    const bumaUserID = "rThJZpQfq4Oz1Yx43";
+
     emailjs
-      .send(
-        "service_qqiovkg",
-        "template_anbk7dx",
-        emailParams,
-        "Et-gQwpscuzgDG164"
-      )
+      .send(bumaServiceID, bumaContactUsTemplateID, emailParams, bumaUserID)
       .then(
         () => {
           console.log("SUCCESS!");
